@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8886F3251BA4BE28009CF282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886F3241BA4BE28009CF282 /* AppDelegate.swift */; };
+		8886F3271BA4BE28009CF282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886F3261BA4BE28009CF282 /* ViewController.swift */; };
+		8886F32A1BA4BE28009CF282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8886F3281BA4BE28009CF282 /* Main.storyboard */; };
+		8886F32C1BA4BE28009CF282 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8886F32B1BA4BE28009CF282 /* Images.xcassets */; };
+		8886F32F1BA4BE28009CF282 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8886F32D1BA4BE28009CF282 /* LaunchScreen.xib */; };
+		8886F33B1BA4BE28009CF282 /* GoatLampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886F33A1BA4BE28009CF282 /* GoatLampTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8886F3351BA4BE28009CF282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8886F3171BA4BE27009CF282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8886F31E1BA4BE27009CF282;
+			remoteInfo = GoatLamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8886F31F1BA4BE27009CF282 /* GoatLamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoatLamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8886F3231BA4BE28009CF282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8886F3241BA4BE28009CF282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8886F3261BA4BE28009CF282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8886F3291BA4BE28009CF282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8886F32B1BA4BE28009CF282 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8886F32E1BA4BE28009CF282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8886F3341BA4BE28009CF282 /* GoatLampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoatLampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8886F3391BA4BE28009CF282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8886F33A1BA4BE28009CF282 /* GoatLampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatLampTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8886F31C1BA4BE27009CF282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886F3311BA4BE28009CF282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8886F3161BA4BE27009CF282 = {
+			isa = PBXGroup;
+			children = (
+				8886F3211BA4BE27009CF282 /* GoatLamp */,
+				8886F3371BA4BE28009CF282 /* GoatLampTests */,
+				8886F3201BA4BE27009CF282 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8886F3201BA4BE27009CF282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8886F31F1BA4BE27009CF282 /* GoatLamp.app */,
+				8886F3341BA4BE28009CF282 /* GoatLampTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8886F3211BA4BE27009CF282 /* GoatLamp */ = {
+			isa = PBXGroup;
+			children = (
+				8886F3241BA4BE28009CF282 /* AppDelegate.swift */,
+				8886F3261BA4BE28009CF282 /* ViewController.swift */,
+				8886F3281BA4BE28009CF282 /* Main.storyboard */,
+				8886F32B1BA4BE28009CF282 /* Images.xcassets */,
+				8886F32D1BA4BE28009CF282 /* LaunchScreen.xib */,
+				8886F3221BA4BE27009CF282 /* Supporting Files */,
+			);
+			path = GoatLamp;
+			sourceTree = "<group>";
+		};
+		8886F3221BA4BE27009CF282 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8886F3231BA4BE28009CF282 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8886F3371BA4BE28009CF282 /* GoatLampTests */ = {
+			isa = PBXGroup;
+			children = (
+				8886F33A1BA4BE28009CF282 /* GoatLampTests.swift */,
+				8886F3381BA4BE28009CF282 /* Supporting Files */,
+			);
+			path = GoatLampTests;
+			sourceTree = "<group>";
+		};
+		8886F3381BA4BE28009CF282 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8886F3391BA4BE28009CF282 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8886F31E1BA4BE27009CF282 /* GoatLamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8886F33E1BA4BE28009CF282 /* Build configuration list for PBXNativeTarget "GoatLamp" */;
+			buildPhases = (
+				8886F31B1BA4BE27009CF282 /* Sources */,
+				8886F31C1BA4BE27009CF282 /* Frameworks */,
+				8886F31D1BA4BE27009CF282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoatLamp;
+			productName = GoatLamp;
+			productReference = 8886F31F1BA4BE27009CF282 /* GoatLamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8886F3331BA4BE28009CF282 /* GoatLampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8886F3411BA4BE28009CF282 /* Build configuration list for PBXNativeTarget "GoatLampTests" */;
+			buildPhases = (
+				8886F3301BA4BE28009CF282 /* Sources */,
+				8886F3311BA4BE28009CF282 /* Frameworks */,
+				8886F3321BA4BE28009CF282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8886F3361BA4BE28009CF282 /* PBXTargetDependency */,
+			);
+			name = GoatLampTests;
+			productName = GoatLampTests;
+			productReference = 8886F3341BA4BE28009CF282 /* GoatLampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8886F3171BA4BE27009CF282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Michael Recachinas";
+				TargetAttributes = {
+					8886F31E1BA4BE27009CF282 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					8886F3331BA4BE28009CF282 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8886F31E1BA4BE27009CF282;
+					};
+				};
+			};
+			buildConfigurationList = 8886F31A1BA4BE27009CF282 /* Build configuration list for PBXProject "GoatLamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8886F3161BA4BE27009CF282;
+			productRefGroup = 8886F3201BA4BE27009CF282 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8886F31E1BA4BE27009CF282 /* GoatLamp */,
+				8886F3331BA4BE28009CF282 /* GoatLampTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8886F31D1BA4BE27009CF282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886F32A1BA4BE28009CF282 /* Main.storyboard in Resources */,
+				8886F32F1BA4BE28009CF282 /* LaunchScreen.xib in Resources */,
+				8886F32C1BA4BE28009CF282 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886F3321BA4BE28009CF282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8886F31B1BA4BE27009CF282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886F3271BA4BE28009CF282 /* ViewController.swift in Sources */,
+				8886F3251BA4BE28009CF282 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8886F3301BA4BE28009CF282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8886F33B1BA4BE28009CF282 /* GoatLampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8886F3361BA4BE28009CF282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8886F31E1BA4BE27009CF282 /* GoatLamp */;
+			targetProxy = 8886F3351BA4BE28009CF282 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8886F3281BA4BE28009CF282 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8886F3291BA4BE28009CF282 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8886F32D1BA4BE28009CF282 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8886F32E1BA4BE28009CF282 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8886F33C1BA4BE28009CF282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8886F33D1BA4BE28009CF282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8886F33F1BA4BE28009CF282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoatLamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8886F3401BA4BE28009CF282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoatLamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8886F3421BA4BE28009CF282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoatLampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoatLamp.app/GoatLamp";
+			};
+			name = Debug;
+		};
+		8886F3431BA4BE28009CF282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoatLampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoatLamp.app/GoatLamp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8886F31A1BA4BE27009CF282 /* Build configuration list for PBXProject "GoatLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886F33C1BA4BE28009CF282 /* Debug */,
+				8886F33D1BA4BE28009CF282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8886F33E1BA4BE28009CF282 /* Build configuration list for PBXNativeTarget "GoatLamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886F33F1BA4BE28009CF282 /* Debug */,
+				8886F3401BA4BE28009CF282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8886F3411BA4BE28009CF282 /* Build configuration list for PBXNativeTarget "GoatLampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8886F3421BA4BE28009CF282 /* Debug */,
+				8886F3431BA4BE28009CF282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8886F3171BA4BE27009CF282 /* Project object */;
+}
