@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoatLamp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,139 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59l-GI-1hv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-eH-FBc">
+                                        <rect key="frame" x="433" y="123" width="32" height="30"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeO-aD-xPS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvI-5K-1ct">
+                                        <rect key="frame" x="90" y="123" width="31" height="30"/>
+                                        <state key="normal" title="Prev">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prevAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwF-k7-yGk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEE-MZ-qXB">
+                                        <rect key="frame" x="433" y="249" width="32" height="30"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tl3-0A-bw2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJY-yV-6gi">
+                                        <rect key="frame" x="90" y="249" width="31" height="30"/>
+                                        <state key="normal" title="Prev">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prevAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSZ-2w-hlb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRL-MF-0O9">
+                                        <rect key="frame" x="433" y="418" width="32" height="30"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q2Q-jF-LEK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpW-nT-ga9">
+                                        <rect key="frame" x="90" y="418" width="31" height="30"/>
+                                        <state key="normal" title="Prev">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prevAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0C5-nO-1SB"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S4h-WG-4dM">
+                                        <rect key="frame" x="161" y="217" width="240" height="128"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-zo-bNT">
+                                        <rect key="frame" x="161" y="369" width="240" height="128"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXS-nE-G5z">
+                                        <rect key="frame" x="161" y="74" width="240" height="128"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPM-jy-udN">
+                                        <rect key="frame" x="478" y="28" width="30" height="30"/>
+                                        <state key="normal" title="Edit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="enableEdit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySq-Rk-Bo9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.150136723" green="0.61113133350000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="9VM-eH-FBc" firstAttribute="leading" secondItem="zXS-nE-G5z" secondAttribute="trailing" constant="32" id="3tP-DV-QzQ"/>
+                                    <constraint firstItem="S4h-WG-4dM" firstAttribute="top" secondItem="zXS-nE-G5z" secondAttribute="bottom" constant="15" id="4Qd-j7-KQc"/>
+                                    <constraint firstItem="XvI-5K-1ct" firstAttribute="leading" secondItem="59l-GI-1hv" secondAttribute="leading" constant="90" id="4pD-j2-3Et"/>
+                                    <constraint firstAttribute="centerX" secondItem="zXS-nE-G5z" secondAttribute="centerX" constant="19" id="6Nk-tG-D8L"/>
+                                    <constraint firstItem="XJY-yV-6gi" firstAttribute="top" secondItem="XvI-5K-1ct" secondAttribute="bottom" constant="96" id="9ef-Cn-fic"/>
+                                    <constraint firstItem="xPM-jy-udN" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="28" id="AVZ-bi-BEG"/>
+                                    <constraint firstItem="8Qr-zo-bNT" firstAttribute="leading" secondItem="DpW-nT-ga9" secondAttribute="trailing" constant="40" id="CTS-gF-i4x"/>
+                                    <constraint firstAttribute="centerX" secondItem="S4h-WG-4dM" secondAttribute="centerX" constant="19" id="FGG-jb-RY8"/>
+                                    <constraint firstItem="zXS-nE-G5z" firstAttribute="leading" secondItem="XvI-5K-1ct" secondAttribute="trailing" constant="40" id="HX2-EU-Q8r"/>
+                                    <constraint firstItem="sEE-MZ-qXB" firstAttribute="top" secondItem="9VM-eH-FBc" secondAttribute="bottom" constant="96" id="KWg-rk-fQL"/>
+                                    <constraint firstAttribute="centerX" secondItem="8Qr-zo-bNT" secondAttribute="centerX" constant="19" id="QCj-W8-NJw"/>
+                                    <constraint firstItem="8Qr-zo-bNT" firstAttribute="top" secondItem="S4h-WG-4dM" secondAttribute="bottom" constant="24" id="QDa-JQ-jCl"/>
+                                    <constraint firstItem="9VM-eH-FBc" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="123" id="SU6-26-pcU"/>
+                                    <constraint firstItem="DpW-nT-ga9" firstAttribute="leading" secondItem="59l-GI-1hv" secondAttribute="leading" constant="90" id="XgU-j3-0Qf"/>
+                                    <constraint firstAttribute="trailing" secondItem="sEE-MZ-qXB" secondAttribute="trailing" constant="135" id="XzQ-2r-oZX"/>
+                                    <constraint firstItem="S4h-WG-4dM" firstAttribute="leading" secondItem="XJY-yV-6gi" secondAttribute="trailing" constant="40" id="Zey-A0-2Wi"/>
+                                    <constraint firstAttribute="trailing" secondItem="uRL-MF-0O9" secondAttribute="trailing" constant="135" id="azd-le-S2w"/>
+                                    <constraint firstItem="sEE-MZ-qXB" firstAttribute="leading" secondItem="S4h-WG-4dM" secondAttribute="trailing" constant="32" id="kjh-DO-ONm"/>
+                                    <constraint firstItem="uRL-MF-0O9" firstAttribute="top" secondItem="sEE-MZ-qXB" secondAttribute="bottom" constant="139" id="klV-Th-qv3"/>
+                                    <constraint firstItem="XJY-yV-6gi" firstAttribute="leading" secondItem="59l-GI-1hv" secondAttribute="leading" constant="90" id="lWM-2c-c5S"/>
+                                    <constraint firstItem="XvI-5K-1ct" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="123" id="mGj-dR-64i"/>
+                                    <constraint firstAttribute="trailing" secondItem="xPM-jy-udN" secondAttribute="trailing" constant="92" id="no0-vt-GpY"/>
+                                    <constraint firstAttribute="trailing" secondItem="9VM-eH-FBc" secondAttribute="trailing" constant="135" id="qBE-mD-Tjj"/>
+                                    <constraint firstItem="DpW-nT-ga9" firstAttribute="top" secondItem="XJY-yV-6gi" secondAttribute="bottom" constant="139" id="uHy-NY-3Tp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="59l-GI-1hv" secondAttribute="trailing" constant="-16" id="7e3-ng-diR"/>
+                            <constraint firstItem="59l-GI-1hv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="dwP-BZ-Qf9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="bottom" id="iCe-78-du9"/>
+                            <constraint firstItem="59l-GI-1hv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="zfY-sQ-Ozq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="botImageView" destination="8Qr-zo-bNT" id="kqz-VN-QTe"/>
+                        <outlet property="botNextBtn" destination="uRL-MF-0O9" id="RHh-Kx-dDs"/>
+                        <outlet property="botPrevBtn" destination="DpW-nT-ga9" id="XRS-t1-Yqa"/>
+                        <outlet property="editBtn" destination="xPM-jy-udN" id="3bJ-Vp-nQm"/>
+                        <outlet property="midImageView" destination="S4h-WG-4dM" id="2ns-1q-3LH"/>
+                        <outlet property="midNextBtn" destination="sEE-MZ-qXB" id="ONR-xi-Aq6"/>
+                        <outlet property="midPrevBtn" destination="XJY-yV-6gi" id="D7e-HI-yDZ"/>
+                        <outlet property="topImageView" destination="zXS-nE-G5z" id="CLr-8b-4u6"/>
+                        <outlet property="topNextBtn" destination="9VM-eH-FBc" id="f5L-gd-58O"/>
+                        <outlet property="topPrevBtn" destination="XvI-5K-1ct" id="A9f-dv-GvO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
