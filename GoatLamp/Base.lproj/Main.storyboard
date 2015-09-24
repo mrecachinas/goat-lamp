@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59l-GI-1hv">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-eH-FBc">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-eH-FBc">
                                         <rect key="frame" x="433" y="123" width="32" height="30"/>
                                         <state key="normal" title="Next">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -30,7 +30,7 @@
                                             <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeO-aD-xPS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvI-5K-1ct">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvI-5K-1ct">
                                         <rect key="frame" x="90" y="123" width="31" height="30"/>
                                         <state key="normal" title="Prev">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -86,11 +86,11 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-zo-bNT">
                                         <rect key="frame" x="161" y="369" width="240" height="128"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXS-nE-G5z">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="top1" translatesAutoresizingMaskIntoConstraints="NO" id="zXS-nE-G5z">
                                         <rect key="frame" x="161" y="74" width="240" height="128"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPM-jy-udN">
-                                        <rect key="frame" x="478" y="28" width="30" height="30"/>
+                                        <rect key="frame" x="550" y="28" width="30" height="30"/>
                                         <state key="normal" title="Edit">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -107,7 +107,6 @@
                                     <constraint firstItem="XvI-5K-1ct" firstAttribute="leading" secondItem="59l-GI-1hv" secondAttribute="leading" constant="90" id="4pD-j2-3Et"/>
                                     <constraint firstAttribute="centerX" secondItem="zXS-nE-G5z" secondAttribute="centerX" constant="19" id="6Nk-tG-D8L"/>
                                     <constraint firstItem="XJY-yV-6gi" firstAttribute="top" secondItem="XvI-5K-1ct" secondAttribute="bottom" constant="96" id="9ef-Cn-fic"/>
-                                    <constraint firstItem="xPM-jy-udN" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="28" id="AVZ-bi-BEG"/>
                                     <constraint firstItem="8Qr-zo-bNT" firstAttribute="leading" secondItem="DpW-nT-ga9" secondAttribute="trailing" constant="40" id="CTS-gF-i4x"/>
                                     <constraint firstAttribute="centerX" secondItem="S4h-WG-4dM" secondAttribute="centerX" constant="19" id="FGG-jb-RY8"/>
                                     <constraint firstItem="zXS-nE-G5z" firstAttribute="leading" secondItem="XvI-5K-1ct" secondAttribute="trailing" constant="40" id="HX2-EU-Q8r"/>
@@ -117,15 +116,16 @@
                                     <constraint firstItem="9VM-eH-FBc" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="123" id="SU6-26-pcU"/>
                                     <constraint firstItem="DpW-nT-ga9" firstAttribute="leading" secondItem="59l-GI-1hv" secondAttribute="leading" constant="90" id="XgU-j3-0Qf"/>
                                     <constraint firstAttribute="trailing" secondItem="sEE-MZ-qXB" secondAttribute="trailing" constant="135" id="XzQ-2r-oZX"/>
+                                    <constraint firstItem="xPM-jy-udN" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="28" id="ZVK-2N-WLk"/>
                                     <constraint firstItem="S4h-WG-4dM" firstAttribute="leading" secondItem="XJY-yV-6gi" secondAttribute="trailing" constant="40" id="Zey-A0-2Wi"/>
                                     <constraint firstAttribute="trailing" secondItem="uRL-MF-0O9" secondAttribute="trailing" constant="135" id="azd-le-S2w"/>
                                     <constraint firstItem="sEE-MZ-qXB" firstAttribute="leading" secondItem="S4h-WG-4dM" secondAttribute="trailing" constant="32" id="kjh-DO-ONm"/>
                                     <constraint firstItem="uRL-MF-0O9" firstAttribute="top" secondItem="sEE-MZ-qXB" secondAttribute="bottom" constant="139" id="klV-Th-qv3"/>
                                     <constraint firstItem="XJY-yV-6gi" firstAttribute="leading" secondItem="59l-GI-1hv" secondAttribute="leading" constant="90" id="lWM-2c-c5S"/>
                                     <constraint firstItem="XvI-5K-1ct" firstAttribute="top" secondItem="59l-GI-1hv" secondAttribute="top" constant="123" id="mGj-dR-64i"/>
-                                    <constraint firstAttribute="trailing" secondItem="xPM-jy-udN" secondAttribute="trailing" constant="92" id="no0-vt-GpY"/>
                                     <constraint firstAttribute="trailing" secondItem="9VM-eH-FBc" secondAttribute="trailing" constant="135" id="qBE-mD-Tjj"/>
                                     <constraint firstItem="DpW-nT-ga9" firstAttribute="top" secondItem="XJY-yV-6gi" secondAttribute="bottom" constant="139" id="uHy-NY-3Tp"/>
+                                    <constraint firstAttribute="trailing" secondItem="xPM-jy-udN" secondAttribute="trailing" constant="20" id="yh3-r6-LT8"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -154,4 +154,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="top1" width="1536" height="1028"/>
+    </resources>
 </document>

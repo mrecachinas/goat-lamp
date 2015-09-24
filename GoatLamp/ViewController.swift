@@ -36,9 +36,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         hideEditBtns()
         
-        var img1: UIImage = UIImage(contentsOfFile: "top1.jpg")!
-        var img2: UIImage = UIImage(contentsOfFile: "top2.jpg")!
-        var img3: UIImage = UIImage(contentsOfFile: "top3.jpg")!
+        var img1: UIImage = UIImage(named: "top1")!
+        var img2: UIImage = UIImage(named: "top2")!
+        var img3: UIImage = UIImage(named: "top3")!
         topImageArray = [img1, img2, img3]
     }
 
@@ -98,15 +98,15 @@ class ViewController: UIViewController {
 
     @IBAction func prevAction(sender: UIButton) {
         switch(sender) {
-            case topNextBtn:
+            case topPrevBtn:
                 topIdx = (topIdx - 1) % topImageArray.count
                 updateImage(topIdx, imageView: topImageView, imageArray: topImageArray)
                 break
-            case midNextBtn:
+            case midPrevBtn:
                 midIdx = (midIdx - 1) % midImageArray.count
                 updateImage(midIdx, imageView: midImageView, imageArray: midImageArray)
                 break
-            case botNextBtn:
+            case botPrevBtn:
                 botIdx = (botIdx - 1) % botImageArray.count
                 updateImage(botIdx, imageView: botImageView, imageArray: botImageArray)
                 break
