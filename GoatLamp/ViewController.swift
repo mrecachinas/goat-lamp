@@ -35,12 +35,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         hideEditBtns()
         
         var img1: UIImage = UIImage(named: "top1")!
         var img2: UIImage = UIImage(named: "top2")!
         var img3: UIImage = UIImage(named: "top3")!
+        
         topImageArray = [img1, img2, img3]
+        midImageArray = [img1, img2, img3]
+        botImageArray = [img1, img2, img3]
     }
 
     override func didReceiveMemoryWarning() {
