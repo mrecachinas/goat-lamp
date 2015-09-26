@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     @IBOutlet weak var editBtn: UIButton!
@@ -117,6 +118,26 @@ class ViewController: UIViewController {
     
     func updateImage(idx: Int, imageView: UIImageView, imageArray: [UIImage]) {
         imageView.image = imageArray[idx]
+    }
+    
+    @IBAction func toggleTorch(sender: UIButton) {
+        println("toggleTorch")
+        let avDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        // check if the device has torch
+        if let avD = avDevice {
+            if  avD.hasTorch {
+                // lock your device for configuration
+                avD.lockForConfiguration(nil)
+                // check if your torchMode is on or off. If on turns it off otherwise turns it on
+                avD.torchMode = avDevice.torchActive ? AVCaptureTorchMode.Off : AVCaptureTorchMode.On
+                // sets the torch intensity to 100%
+                avD.setTorchModeOnWithLevel(1.0, error: nil)
+                // unlock your device
+                avD.unlockForConfiguration()
+            }
+        } else {
+            println("avDevice is nil")
+        }
     }
 }
 
