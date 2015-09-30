@@ -156,6 +156,8 @@
 		8886F3171BA4BE27009CF282 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Michael Recachinas";
 				TargetAttributes = {
@@ -411,6 +413,7 @@
 				8886F3401BA4BE28009CF282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8886F3411BA4BE28009CF282 /* Build configuration list for PBXNativeTarget "GoatLampTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				8886F3431BA4BE28009CF282 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

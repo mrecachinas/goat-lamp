@@ -38,9 +38,9 @@ class ViewController: UIViewController {
         
         hideEditBtns()
         
-        var img1: UIImage = UIImage(named: "top1")!
-        var img2: UIImage = UIImage(named: "top2")!
-        var img3: UIImage = UIImage(named: "top3")!
+        let img1: UIImage = UIImage(named: "top1")!
+        let img2: UIImage = UIImage(named: "top2")!
+        let img3: UIImage = UIImage(named: "top3")!
         
         topImageArray = [img1, img2, img3]
         midImageArray = [img1, img2, img3]
@@ -125,22 +125,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func toggleTorch(sender: UIButton) {
-        println("toggleTorch")
+        print("toggleTorch")
         let avDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         // check if the device has torch
         if let avD = avDevice {
             if  avD.hasTorch {
-                // lock your device for configuration
-                avD.lockForConfiguration(nil)
+                do {
+                    // lock your device for configuration
+                    try avD.lockForConfiguration()
+                } catch _ {
+                }
                 // check if your torchMode is on or off. If on turns it off otherwise turns it on
                 avD.torchMode = avDevice.torchActive ? AVCaptureTorchMode.Off : AVCaptureTorchMode.On
-                // sets the torch intensity to 100%
-                avD.setTorchModeOnWithLevel(1.0, error: nil)
+                do {
+                    // sets the torch intensity to 100%
+                    try avD.setTorchModeOnWithLevel(1.0)
+                } catch _ {
+                }
                 // unlock your device
                 avD.unlockForConfiguration()
             }
         } else {
-            println("avDevice is nil")
+            print("avDevice is nil")
         }
     }
 }
