@@ -133,17 +133,16 @@ class ViewController: UIViewController {
                 do {
                     // lock your device for configuration
                     try avD.lockForConfiguration()
+                    if (avD.torchMode == AVCaptureTorchMode.On) {
+                        avD.torchMode = AVCaptureTorchMode.Off
+                    } else {
+                        try avD.setTorchModeOnWithLevel(1.0)
+                    }
+                    // unlock your device
+                    avD.unlockForConfiguration()
                 } catch _ {
+                    print("Exception occurred in dealing with torch")
                 }
-                // check if your torchMode is on or off. If on turns it off otherwise turns it on
-                avD.torchMode = avDevice.torchActive ? AVCaptureTorchMode.Off : AVCaptureTorchMode.On
-                do {
-                    // sets the torch intensity to 100%
-                    try avD.setTorchModeOnWithLevel(1.0)
-                } catch _ {
-                }
-                // unlock your device
-                avD.unlockForConfiguration()
             }
         } else {
             print("avDevice is nil")
